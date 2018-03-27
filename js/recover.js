@@ -598,6 +598,7 @@ function GetTransactionData(outputsToSpend, paths, publicKeys, amountsToSend, ad
     }
 
     //get the transaction and return along with the hashes used to sign
+	console.log("Creating transaction with... pubKeys: " + publicKeys + " outputs: " + outputsToSpend + " amounts: " + amountsToSend + " toAddress: " + addressToSend + " signatures: " + signatures);
     var txn = GetTransaction(publicKeys, outputsToSpend, amountsToSend, addressToSend, signatures);
 	console.log("Created transaction: " + txn);
 	
